@@ -1,0 +1,17 @@
+title: python
+tagline: A brand new course on Learning Lab
+description: 'from java to python, i will do it both'
+template:
+  repo: python-template
+  name: python
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
